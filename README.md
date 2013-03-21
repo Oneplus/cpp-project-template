@@ -1,11 +1,17 @@
 # CPP Project Template
 
-FEATURES
+[![Build Status](https://travis-ci.org/Oneplus/cpp-project-template.png?branch=master)](https://travis-ci.org/Oneplus/cpp-project-template)
+
+Features
 --------
 
 Maybe there are some features in this silly project.
 
-TECHNIC SUMMARY
+* build with cmake, maybe make it portable between different platform;
+* hacked configure and Makefile maybe make it a tiny little friendly to the automake use;
+* incorporate gtest framework into thsi project. however, if you hate unittest, i didnt mean to disturb you =(
+
+Technic Summary
 ---------------
 
 In this example project, I provide a silly library `foobar`.
@@ -13,7 +19,7 @@ There is a class called `Foo` in `libfoobar`, and it has a method called `bar`.
 This stupid method will recieve an integer and judge whether it is smaller than 1024.
 Also, it want make a joke of user who doesnt have fortran compiler by return `false` at input of 1025.
 
-FUTURE WORK
+Future Work
 -----------
 
 * incorpuate ctest into project

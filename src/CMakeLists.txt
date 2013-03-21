@@ -1,9 +1,10 @@
-include (EnableFortran)
+include (CMakeDetermineFortranCompiler)
 
 option (HAVE_CONFIG "Have config file" on)
 
 # check if there is fortran compiler on this platform
 if (CMAKE_Fortran_COMPILER)
+    enable_language (Fortran)
     option (WITH_FORTRAN "Compile with fortran" on)
 else (CMAKE_Fortran_COMPILER)
     message (STATUS "fortran compiler is not found.")

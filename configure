@@ -1,0 +1,10 @@
+#! /bin/bash
+
+# detect the existance of build directory
+# if not exist, build
+if [ ! -d build ]; then
+    mkdir -p build
+fi
+
+# enter the build directory and generate Makefile
+(cd build >/dev/null 2>&1 && cmake .. "$@")

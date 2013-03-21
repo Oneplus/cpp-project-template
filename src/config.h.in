@@ -1,0 +1,9 @@
+#ifndef __CONFIG_H__
+#define __CONFIG_H__
+
+// macro WITH_FORTRAN is config in CMakeLists.txt
+#cmakedefine WITH_FORTRAN
+#cmakedefine PROJECT_NAME       "@PROJECT_NAME@"
+#cmakedefine PROJECT_VERSION    "@PROJECT_VERSION@"
+
+#endif  // end for __CONFIG_H__

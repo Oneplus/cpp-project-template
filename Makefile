@@ -11,6 +11,9 @@ all: ./build/Makefile
 ./build/Makefile:
 	@ (cd build >/dev/null 2>&1 && cmake ..)
 
+test:
+	@ (cd build >/dev/null 2>&1 && ctest --output-on-failure .)
+
 distclean:
 	@- (cd build >/dev/null 2>&1 && cmake .. >/dev/null 2>&1)
 	@- $(MAKE) --silent -C build clean || true

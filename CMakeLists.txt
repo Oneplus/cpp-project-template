@@ -11,10 +11,13 @@ set (CMAKE_MODULE_PATH          ${PROJECT_SOURCE_DIR}/cmake)
 set (EXECUTABLE_OUTPUT_PATH     ${PROJECT_SOURCE_DIR}/bin)
 set (LIBRARY_OUTPUT_PATH        ${PROJECT_SOURCE_DIR}/lib)
 
-# config source dir
+# config source directories
 set (SOURCE_DIR                 ${PROJECT_SOURCE_DIR}/src)
 set (TEST_DIR                   ${PROJECT_SOURCE_DIR}/test)
 set (THIRDPARTY_DIR             ${PROJECT_SOURCE_DIR}/thirdparty)
+
+# config data directories
+set (DATA_DIR                   ${PROJECT_SOURCE_DIR}/data)
 
 # compile shipped libraries
 add_subdirectory (thirdparty)
@@ -23,4 +26,5 @@ add_subdirectory (thirdparty)
 add_subdirectory (src)
 
 # compile test
+enable_testing ()
 add_subdirectory (test)
